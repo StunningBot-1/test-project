@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn Fittness☀️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url(img/gym\ man.jpg);
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            /* border: 2px solid violet; */
+            left: 34px;
+            top: 10px;
+        }
+
+        .left img {
+            width: 100px;
+
+            filter: invert(100%);
+        }
+
+        .left div {
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 10px auto;
+            /* border: 2px solid violet; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 10px;
+            display: inline-block;
+            /* border: 2px solid violet; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: aqua;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: gray
+        }
+
+        .btn {
+            background-color: aqua;
+            border-radius: 10px;
+            border: 2px solid blue;
+            padding: 4px 14px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            color: blueviolet;
+            background-color: rgb(238, 237, 140);
+            cursor: pointer;
+            font-weight: bolder;
+        }
+
+        .container {
+            clear: both;
+            position: relative;
+            border: 2px solid rgb(241, 245, 241);
+            margin: 2px 2px;
+            padding: 75px;
+            width: 30%;
+            top: 90px;
+            left:40px;
+            border-radius: 20px;
+        }
+        .form_group input{
+            text-align: center;
+            display: block;
+            width: 435px;
+            margin: 12px;
+            border: 2px solid black;
+            border-radius: 9px;
+            padding: 6px;
+
+        }
+        .container h3{
+            text-align: center;
+        }
+        .container button{
+            text-align: center;
+            width:75%;
+            margin:20px 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/gym logo.png" alt="No image found">
+            <div style="font-size: 15px;">harry fittness</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best Gym of Mumbai</h3>
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" name="" placeholder="Type your name" id="">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter your age" id="">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Mobile Number" id="">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter Email id" id="">
+            </div>
+            <button class="btn">Submit Now</button>
+        </form>
+    </div>
+</body>
+
+</html>
